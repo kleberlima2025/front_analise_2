@@ -1,24 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards de Produtos kleber lima</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #001F3F; /* fundo azul escuro */
+      font-family: Arial, sans-serif;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap; /* deixa responsivo */
+    }
+    .container-estrelas {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+    }
+    .card {
+      background: #20B2AA; /* verde água */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 250px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .card img {
+      width: 150px;
+    }
+
+    .titulo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .paragrafo {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .btn-enviar {
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .btn-enviar:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
-    <!-- card1 div do nosso primeiro card-->
-     <!-- ./ a partir de onde estou faca -->
-     <div>
-        <img src="./imagens/tenis1.png" alt="tenis nike">
-        <h2>Tênis</h2>
-        <p>Este tenis e uma reprodução barata de um tenis original</p>
-        <h3>R$240,00</h3>
-        <ul>
-            <!-- TODO; LISTA COM ESTRELAS A FAZER NO FUTURO -->
+  <div class="cards-container">
+    <div class="card">
+      <img src="./imagens/tenis2.png" alt="Tênis Nike">
+      <h2 class="titulo">Tênis</h2>
+      <p class="paragrafo">Tênis confortável para o dia a dia</p>
+      <h3 class="preco">R$540,00</h3>
+        <ul class="container-estrelas">
+            <!-- TODO: lista de estrelas -->
+             <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
         </ul>
-        <!-- TAG DE LINK -->
-         <A href="#" >COMPRAR</A>
-     </div>
+      <a href="https://www.decathlon.pt/p/mp/vans/tenis-vans-modelo-skate-sk8-hi-cor-castanho/_/R-p-7fb24be8-a6d4-4c5f-a05e-01c2c28d6032?mc=7fb24be8-a6d4-4c5f-a05e-01c2c28d6032_c27&c=CASTANHO" target="_blank" class="btn-enviar">COMPRAR</a>
+    </div>
+
+    <div class="card">
+      <img src="./imagens/tenis1.png" alt="Tênis Nike">
+      <h2 class="titulo">Tênis</h2>
+      <p class="paragrafo">Tênis confortável para o dia a dia</p>
+      <h3 class="preco">R$380,00</h3>
+        <ul class="container-estrelas">
+            <!-- TODO: lista de estrelas -->
+             <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+        </ul>
+      <a href="https://www.decathlon.pt/p/mp/vans/tenis-vans-daniel-johnston-skate-authentic/_/R-p-4f433332-d79d-4616-b096-d2831f1cce87?mc=4f433332-d79d-4616-b096-d2831f1cce87_c251&c=CINZENTO" target="_blank" class="btn-enviar">COMPRAR</a>
+    </div>
+
+    <div class="card">
+      <img src="./imagens/tenis3.png" alt="Tênis Nike">
+      <h2 class="titulo">Tênis</h2>
+      <p class="paragrafo">Tênis confortável para o dia a dia</p>
+      <h3 class="preco">R$340,00</h3>
+        <ul class="container-estrelas">
+            <!-- TODO: lista de estrelas -->
+             <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+        </ul>
+      <a href="https://www.decathlon.pt/p/mp/vans/tenis-vans-modelo-old-skool-cor-preto/_/R-p-a94f6070-2a7a-49ae-8952-9ad41e47f2cc?mc=a94f6070-2a7a-49ae-8952-9ad41e47f2cc_c1&c=Preto" target="_blank" class="btn-enviar">COMPRAR</a>
+    </div>
+
+    <div class="card">
+      <img src="./imagens/tenis1.png" alt="Tênis Nike">
+      <h2 class="titulo">Tênis</h2>
+      <p class="paragrafo">Tênis confortável para o dia a dia</p>
+      <h3 class="preco">R$240,00</h3>
+        <ul class="container-estrelas">
+            <!-- TODO: lista de estrelas -->
+             <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.0" id="<svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+                </a>
+            </li>
+        </ul>
+      <a href="https://www.decathlon.pt" target="_blank" class="btn-enviar">COMPRAR</a>
+    </div>
+  </div>
 </body>
 </html>
