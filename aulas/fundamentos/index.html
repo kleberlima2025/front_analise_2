@@ -1,0 +1,90 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>carde produto index2</title>
+  <style>
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;   /* <-- tira as bolinhas */
+      margin: 0;
+      padding: 0;
+    }
+ 
+
+    .cards {
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 15px;
+        width: 250px;
+        border: 1px solid gray;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .btn-enviar {
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-enviar:hover {
+background-color: white;
+}
+.btn-enviar a {
+color:  white;
+text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+    <!-- ul representa uma lista / consegue colocar em bloco -->
+    <ul style="display: flex; justify-content: space-around; align-items: center; list-style: none; margin:0; padding:0;">
+    <li>
+        <a href="/"><img width="130" src="./imagens/snk.png" alt=""></a>
+    </li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Comprar</a></li>
+</ul>
+    
+    <div>
+        <!-- botão usado em formularios ctrl ; -->
+         <div class=".btn-enviar">
+             <a href="#">click 2</a>
+        </div>
+        <button>Clique-me</button><br></br>
+        <!-- para colocar botao href -->
+        <a href="#">click 2</a>
+        <a href="https://www.netshoes.com.br/">click 2</a><br><br>
+        <!-- para recuo -->
+        <!-- em met varios padroes de texto -->
+        <!-- lorem5 tras esta quantidade de palavras -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, totam.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

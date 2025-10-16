@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    marging: 0;
+    pading: 0;
+/* 1 - tudo tera margem e borda zero se tirar tera margem */
+/* margin linha superior coloquei 150 para ficar no meio da tela */
+}
+
+.main {
+/* 6 - display: flex; no container permite alinhar as caixas no centro, com espaçamento automático. */
+    /* display:flex; */
+    /* justify-content: left; */
+/* 7 justify-content: center  */
+}
+
+.body {
+background-color: blue;
+
+}
+
+
+.card {
+/*8 - colocado margem para se ter ideia de espaco inicial no projeto no front  */
+    margin: 50px;
+    color: #fff;
+/* margin top topo da borda do card */
+    margin-top: 100px;
+    background-color: rgb(69, 206, 51);
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+/* 9 border-radius: altura do card */
+    box-shadow: blueviolet; 
+/* 10 copiado site boxshadow */
+
+}
+
+.card>img {
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
