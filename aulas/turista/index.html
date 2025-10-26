@@ -1,53 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Route Voyager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Voyager</title>
 </head>
 <body>
 
-<!-- quando coloco crase nao preciso mais do sinal de mais -->
+<script>
+  const lugares = ["praia", "montanha"];
 
-    <!-- <script src =app.js"></script> -->
-    <script>
-        const lugares = ["praia", "montanha"];
+  const mensagem = `
+  -- ROTEIRO DE VIAGENS --
+  Lugares disponíveis: ${lugares.join(" - ")}
+  ------------------------
+  `;
 
-        const mensagem = `
-        --ROTEIRO DE VIAGENS --
-        Lugares: ${lugares.join(" - ")}
-        --------------- 
-        `;
+  alert(mensagem);
 
-        alert(mensagem);     // Fake Menu
+  let escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
 
-        let escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
+  while (!escolhaUsuario || escolhaUsuario.trim() === "") {
+    alert("Por favor, responda!");
+    escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
+  }
 
-        while (escolhaUsuario === "" || escolhaUsuario === null || escolhaUsuario.trim() === "") {
-        escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
-        if (escolhaUsuario === null) {
-             alert("Você cancelou. Responda! Pra onde deseja viajar?... praia ou montanha?");
-        } else if (escolhaUsuario.trim() === "") {
-             alert("Por favor, Responda! Pra onde deseja viajar?... praia ou montanha?");
-        }
-        escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
-     }
+  escolhaUsuario = escolhaUsuario.toLowerCase().trim();
 
-        escolhaUsuario = escolhaUsuario.toLowerCase().trim();
+  if (lugares.includes(escolhaUsuario)) {
+    alert(`Boa viagem para: ${escolhaUsuario}`);
 
-        if (lugares.includes(escolhaUsuario)) {
-            alert(`Boa viagem para: ${escolhaUsuario}`);
-        if (escolhaUsuario === "praia") {
-            alert("Sol, areia e mar! 🌴");
-        } else if (escolhaUsuario === "montanha") {
-            alert("Trilhas e ar puro! 🏔️");
-        }
-        } else {
-           alert("Escolha um lugar válido da lista!");
-        }
+    if (escolhaUsuario === "praia") {
+      alert("Sol, areia e mar! 🌴");
+      // redireciona para o arquivo praia.html (mesma pasta)
+      window.location.href = "praia.html";
+    } else if (escolhaUsuario === "montanha") {
+      alert("Trilhas e ar puro! 🏔️");
+      // redireciona para o arquivo montanha.html (mesma pasta)
+      window.location.href = "montanha.html";
+    }
+
+  } else {
+    alert("Escolha um lugar válido da lista!");
+  }
 </script>
-
-
 
 </body>
 </html>
