@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Route Voyager</title>
 </head>
 <body>
 
+<!-- quando coloco crase nao preciso mais do sinal de mais -->
 
-
-// quando coloco crase crase nao preciso mais do sinal de mais
-
-
-    <script src =app.js"></script>
+    <!-- <script src =app.js"></script> -->
     <script>
-        const lugares = ["praia", "montanha"]
+        const lugares = ["praia", "montanha"];
+
         const mensagem = `
         --ROTEIRO DE VIAGENS --
-        Lugares: ${lugares}
-        -------------------
-        alert(mensagem)
-        const escolhaUsuario = prompt("Pra onde deseja viajar?") ´
-        if(escolhaUsuario == null &&  escolhaUsuario == NaN){
-            alert('Por favor digite um valor da lista de viagem!')
-        } else {
-            if(lugares.includes(escolhaUsuario)) {
-        
-            }else if(escolhaUsuario == "montanha") {
-            alert('montanha....')
-            }
-         
+        Lugares: ${lugares.join(" - ")}
+        --------------- 
+        `;
+
+        alert(mensagem);     // Fake Menu
+
+        let escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
+
+        while (escolhaUsuario === "" || escolhaUsuario === null || escolhaUsuario.trim() === "") {
+        escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
+        if (escolhaUsuario === null) {
+             alert("Você cancelou. Responda! Pra onde deseja viajar?... praia ou montanha?");
+        } else if (escolhaUsuario.trim() === "") {
+             alert("Por favor, Responda! Pra onde deseja viajar?... praia ou montanha?");
         }
+        escolhaUsuario = prompt("Pra onde deseja viajar?... praia ou montanha?");
+     }
 
-        alet(lugares.includes(escolhaUsuario))
-        alert('Roteiro de viagens  --\n Lugares: ' + lugares + '' \n---------------
+        escolhaUsuario = escolhaUsuario.toLowerCase().trim();
 
-
-
-
-    </script>
+        if (lugares.includes(escolhaUsuario)) {
+            alert(`Boa viagem para: ${escolhaUsuario}`);
+        if (escolhaUsuario === "praia") {
+            alert("Sol, areia e mar! 🌴");
+        } else if (escolhaUsuario === "montanha") {
+            alert("Trilhas e ar puro! 🏔️");
+        }
+        } else {
+           alert("Escolha um lugar válido da lista!");
+        }
+</script>
 
 
 
