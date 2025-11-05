@@ -4,9 +4,31 @@
 // //**  */>= OU <= TEM QUE SER SEMPRE MAIOR IGUAL OU MENOR IGUAL != NÃO É IGUAL */
 // // && || (E LOGICO, OU LOGICO) && AS DUAS EXTREMIDADES DEVEM SER IGUAIS E ||
 
+
+let a = 10;
+let b = 3;
+const a1 = 11;
+ 
+console.log(a1 + b);  // 13
+console.log("resultado da subtração" && a - b);  // 7
+console.log(a * b);  // 30
+console.log(a / b);  // 3.333...
+console.log(a % b);  // 1
+console.log(a ** b); // 1000
+
+let resultado = (10 + 2) * 3; 
+console.log(resultado); // 36
+
+
+console.log("ola mundo");  
+
+
+
+
+
 // const ehPar = 15 // number
-// // para saber se ele é par 
-// /*
+// para saber se ele é par 
+/*
 // if (ehPar %  15 == 0) {
 // // trata quando a condicao for verdadeira 
 // alert ("O numero" + ehPar + 'é par!')
