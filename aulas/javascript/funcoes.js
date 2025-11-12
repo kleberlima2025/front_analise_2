@@ -1,16 +1,16 @@
 // funcoes sao blocos de codigo que podem
-// ser reaproveitados ao longo da execucao deo programa
-// caracteristicas
+// ser reaproveitados ao longo da execucao do programa
+// caracteristicas;
 // podem ser nomeados ou nao
 // podem receber parametros ou nao
 // podem retornar valores ou nao
 
 
-// funcao pode receber arrays objestos e outras funcoes como parametros
+// funcao pode receber arrays objetos e outras funcoes como parametros
 
-// function dizOLA() {
-//     alert.log('ola!');
-// }
+function dizOLA() {
+    alert.log('ola!');
+}
 
 // function dizOLApessoa(nome  ) {
 //     alert (`nao seja timido ${nome}, diga ola!`);
