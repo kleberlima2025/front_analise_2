@@ -5,22 +5,22 @@
 // // && || (E LOGICO, OU LOGICO) && AS DUAS EXTREMIDADES DEVEM SER IGUAIS E ||
 
 
-let a = 10;
-let b = 3;
-const a1 = 11;
+// let a = 10;
+// let b = 3;
+// const a1 = 11;
  
-console.log(a1 + b);  // 13
-console.log("resultado da subtração" && a - b);  // 7
-console.log(a * b);  // 30
-console.log(a / b);  // 3.333...
-console.log(a % b);  // 1
-console.log(a ** b); // 1000
+// console.log(a1 + b);  // 13
+// console.log("resultado da subtração" && a - b);  // 7
+// console.log(a * b);  // 30
+// console.log(a / b);  // 3.333...
+// console.log(a % b);  // 1
+// console.log(a ** b); // 1000
 
-let resultado = (10 + 2) * 3; 
-console.log(resultado); // 36
+// let resultado = (10 + 2) * 3; 
+// console.log(resultado); // 36
 
 
-console.log("ola mundo");  
+// console.log("ola mundo");  
 
 
 

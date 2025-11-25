@@ -7,11 +7,9 @@
 //  ou podem ser atribuidas as variaveis
 // em javascript funcoes sao conhecidas como
 //  cidadao de primeira classe
-
+Document.
 
 // function calc2(x,y) {
-
-
 // }
 // const calculadora = function () {}
 

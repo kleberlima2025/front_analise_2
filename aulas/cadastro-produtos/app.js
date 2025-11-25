@@ -1,46 +1,78 @@
 const formulario = document.querySelector('#form-user')
-// const titulo = document.querySelector('#nome').value
-// const desc = document.querySelector('#descricao').value
-// const urlImagem = document.querySelector('#img')
 const btnRemover = document.querySelector('#remover')
-const containerCards = document.querySelector('#container-card')
+const containerCards = document.querySelector('#container-cards')
 
-const itensProdutos = [
-    // {nome: "Prod1", descricao; "", url: "http//dfaffdas"),
+const itensProdutos = [] // acho que isso vai guardar tudo
 
-]
-// addEventListener = escutador de eventos  
+// tentando pegar quando enviar o form
 formulario.addEventListener('submit', function(event){
-    event.preventDefault() // previne o comportamento padrão do formulário (recarregar a página)
+    event.preventDefault()  // pra não atualizar a pagina toda hora
+    
+    // pegando os campos... espero que funcione
     const titulo = document.querySelector('#nome').value.trim()
-    const desc = document.querySelector('#descricao').value.trim()
+    const descricao = document.querySelector('#descricao').value.trim()
     const urlImagem = document.querySelector('#img').value.trim()
-    itensProdutos.push({ titulo, descricao, urlImagem })  
-    console.log(itensProdutos)
-    // let cardProduto = `
-    // <div class="card">
-    //   <img src="${urlImagem}" alt="Imagem do produto ${titulo}">
-    //   <h2>${titulo}</h2>
-    //   <p>${desc}</p>
-    // </div>
-    // `
-    // containerCards.innerHTML += cardProduto
 
-    formulario.reset() // limpa o formulário após o envio
-  })
+    // não sei se precisa validar mas vou deixar assim mesmo
+    if(titulo === "" || descricao === "" || urlImagem === ""){
+        alert("Preencha tudo ai por favor")
+    }
 
+    // jogando no array pra depois tentar remover
+    itensProdutos.push({
+        titulo: titulo,
+        descricao: descricao,
+        urlImagem: urlImagem
+    })
 
-//   // criar uma funcao que gera o template do card
-//     function criarcardnovo (titulo, desc, urlImagem) {
-//         return `
-//         // TODO: criar tags html e retonar
-//     }
-//         // renderizar o card novo na pagina do app
-//         function renderizarcard (card) {
-//         //TODO: inserir card atualizado na pagina
-//     }
+    console.log("array até agora:", itensProdutos)
 
-//   // remover o ultimo card adicionado
-//   btnRemover.addEventListener('click', function() {
-//   alert('isso vai acabar deletando um card')
-//     )}
+    // criando um card novo (eu acho que tá certo)
+    let novoCard = criarcardnovo(titulo, descricao, urlImagem)
+
+    // jogando o card no html
+    renderizarcard(novoCard)
+
+    // limpando o formulário porque tava enchendo tudo
+    formulario.reset()
+})
+
+// funcao que monta o html do card (tomara que funcione)
+function criarcardnovo (titulo, desc, urlImagem) {
+
+    // tentei fazer com template string pra ver se fica certo
+    let html = `
+    <div class="card">
+        <img src="${urlImagem}" alt="${titulo}">
+        <h2>${titulo}</h2>
+        <p>${desc}</p>
+    </div>
+    `
+
+    return html
+}
+
+// função só pra jogar o card na tela mesmo
+function renderizarcard (card) {
+    containerCards.innerHTML = containerCards.innerHTML + card
+}
+
+// botao de remover o ultimo card criado
+btnRemover.addEventListener('click', function() {
+
+    // se tiver algo no array eu removo, senão não dá
+    if (itensProdutos.length > 0) {
+
+        itensProdutos.pop()  // removendo do array também
+
+        // removendo do HTML... acho que é isso
+        let ultimo = containerCards.lastElementChild
+        if(ultimo){
+            containerCards.removeChild(ultimo)
+        }
+
+        console.log('Item removido (eu acho)')
+    } else {
+        alert('Não tem nada para remover ainda')
+    }
+})

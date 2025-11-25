@@ -8,9 +8,9 @@
 
 // funcao pode receber arrays objetos e outras funcoes como parametros
 
-function dizOLA() {
-    alert.log('ola!');
-}
+// function dizOLA() {
+//     alert.log('ola!');
+// }
 
 // function dizOLApessoa(nome  ) {
 //     alert (`nao seja timido ${nome}, diga ola!`);
